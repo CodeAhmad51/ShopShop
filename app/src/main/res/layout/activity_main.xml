@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpagebg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/loginaccount" />
+
+    <EditText
+        android:id="@+id/username_login"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/username_background"
+        android:hint="username"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/password_login"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/username_login"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/username_background"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <Button
+        android:id="@+id/log_in_button"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/password_login"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/register_bg"
+        android:text="LogIN" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/password_login"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/log_in_button"
+        android:background="@drawable/username_background"
+        android:gravity="center"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/password_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+
+        android:hint="Forget Password ?"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#F6E7EC"
+        android:textColorHint="#252222"
+        android:textStyle="bold"
+
+        />
+
+</RelativeLayout>
+
