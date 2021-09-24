@@ -5,54 +5,64 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_banner"
+    android:background="@drawable/layout_background_images"
     tools:context=".Home_page">
 
-  <androidx.cardview.widget.CardView
+
+  <RelativeLayout
       android:layout_width="match_parent"
-      android:layout_height="130dp"
-      android:layout_margin="5dp"
-      app:cardCornerRadius="30dp"
-      android:background="@drawable/background_banner"
-      >
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-      >
+      android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/search_badge"
         android:layout_width="40dp"
         android:layout_height="60dp"
-        android:src="@drawable/ic_baseline_search_24"
-      />
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_baseline_search_24" />
 
-      <EditText
-          android:layout_width="250dp"
-          android:layout_height="45dp"
-          android:layout_margin="5dp"
-          android:layout_toRightOf="@id/search_badge"
-          android:background="@color/white" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/search_badge"
+        android:alpha=".9"
+        android:background="@drawable/radious"
+        android:gravity="center"
+        android:hint="search"
+        android:textStyle="bold" />
 
-      <ImageView
-          android:id="@+id/home_24"
-          android:layout_width="40dp"
-          android:layout_height="60dp"
-          android:src="@drawable/home_24"
-          android:layout_alignParentRight="true"
+    <ImageView
+        android:id="@+id/profile_24"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/loginaccount" />
+
+
+    <ImageView
+        android:id="@+id/home_24"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/profile_24"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/home_24" />
+
+    <ImageView
+        android:id="@+id/cart_24"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/home_24"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add_cart_24"
+
         />
 
-      <ImageView
-          android:layout_width="40dp"
-          android:layout_height="60dp"
-          android:layout_below="@id/home_24"
-          android:layout_alignParentRight="true"
-          android:src="@drawable/add_cart_24"
-        />
 
-    </RelativeLayout>
-
-  </androidx.cardview.widget.CardView>
+  </RelativeLayout>
 
 
   </RelativeLayout>

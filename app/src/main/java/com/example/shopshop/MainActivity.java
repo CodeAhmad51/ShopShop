@@ -75,12 +75,33 @@ public class MainActivity extends AppCompatActivity {
     void setUsername(String key , String value){
         SharedPreferences.Editor editor = sharedPreferences_data.edit();
         editor.putString(key, value);
-        editor.commit();
+        editor.apply();
     }
 
     String getUsername(String key){
         String s = sharedPreferences_data.getString(key,"");
         return s ;
+    }
+
+    void setPassword(String key , String value){
+        SharedPreferences.Editor editor = sharedPreferences_data.edit();
+        editor.putString(key, value);
+        editor.apply();
+    }
+
+    String getPassword(String key){
+        String password = sharedPreferences_data.getString(key,"");
+        return password ;
+    }
+    void setEmail(String key , String value){
+        SharedPreferences.Editor editor = sharedPreferences_data.edit();
+        editor.putString(key, value);
+        editor.commit();
+    }
+
+    String getEmail(String key){
+        String password = sharedPreferences_data.getString(key,"");
+        return password ;
     }
 
 }
